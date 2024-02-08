@@ -21,11 +21,25 @@ function App() {
         setTodos(todos.filter((todo) => todo.id !== id));
     };
 
+    const todoComplitedHandler = (id) => {
+        setTodos(
+            todos.map((todo) => {
+                return todo.id === id
+                    ? { ...todo, isComplited: !todo.isComplited }
+                    : { ...todo };
+            })
+        );
+    };
+
     return (
         <div className="App">
             <h1>Todo React App</h1>
             <TodoForm addTodo={addTodoHandler} />
-            <TodoList todos={todos} deleteTodo={deleteTodoHandler} />
+            <TodoList
+                todos={todos}
+                deleteTodo={deleteTodoHandler}
+                todoComplited={todoComplitedHandler}
+            />
         </div>
     );
 }
