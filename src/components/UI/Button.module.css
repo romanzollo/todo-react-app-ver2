@@ -1,5 +1,4 @@
 .button {
-    margin-left: 20px;
     height: 50px;
     cursor: pointer;
     background-color: beige;
@@ -9,6 +8,18 @@
     border-radius: 5px;
 }
 
+form .button,
+.button + .button {
+    margin-left: 20px;
+}
+
 .button:hover {
     background-color: rgb(240, 240, 155);
+}
+
+@media (max-width: 500px) {
+    form .button {
+        display: block;
+        margin: 20px auto;
+    }
 }
