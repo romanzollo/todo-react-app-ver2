@@ -1,7 +1,7 @@
 import Todo from './Todo';
 import styles from './TodoList.module.css';
 
-function TodoList({ todos, deleteTodo, todoComplited }) {
+function TodoList({ todos, deleteTodo, todoCompleted }) {
     return (
         <div className={styles.todoListContainer}>
             {!todos.length && <h2>Todo list is empty</h2>}
@@ -10,7 +10,7 @@ function TodoList({ todos, deleteTodo, todoComplited }) {
                     todo={todo}
                     key={todo.id}
                     deleteTodo={deleteTodo}
-                    todoComplited={todoComplited}
+                    todoCompleted={todoCompleted}
                 />
             ))}
         </div>
