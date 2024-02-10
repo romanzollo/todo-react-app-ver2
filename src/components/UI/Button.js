@@ -1,8 +1,13 @@
 import styles from './Button.module.css';
 
-function Button({ children, title, onClick }) {
+function Button({ children, title, onClick, disabled = false }) {
     return (
-        <button className={styles.button} title={title} onClick={onClick}>
+        <button
+            className={styles.button}
+            title={title}
+            onClick={onClick}
+            disabled={disabled}
+        >
             {children}
         </button>
     );
