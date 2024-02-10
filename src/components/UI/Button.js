@@ -1,13 +1,10 @@
 import styles from './Button.module.css';
 
-function Button({ children, title, onClick, disabled = false }) {
+function Button(props) {
+    const { children, disabled = false } = props;
+
     return (
-        <button
-            className={styles.button}
-            title={title}
-            onClick={onClick}
-            disabled={disabled}
-        >
+        <button {...props} className={styles.button} disabled={disabled}>
             {children}
         </button>
     );
