@@ -47,9 +47,7 @@ function App() {
     return (
         <div className="App">
             <h1>Todo React App</h1>
-
             <TodoForm addTodo={addTodoHandler} />
-
             {todos.length > 0 && (
                 <TodoActions
                     resetTodos={resetTodosHandler}
@@ -57,12 +55,17 @@ function App() {
                     completedTodosExist={!!completedTodosCounter}
                 />
             )}
-
             <TodoList
                 todos={todos}
                 deleteTodo={deleteTodoHandler}
                 todoCompleted={todoCompletedHandler}
             />
+
+            {!!completedTodosCounter && (
+                <h2>{`You have ${completedTodosCounter} completed ${
+                    completedTodosCounter > 1 ? 'todos' : 'todo'
+                }`}</h2>
+            )}
         </div>
     );
 }
