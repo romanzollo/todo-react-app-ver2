@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/romanzollo/todo-react-app/static/css/main.97097110.css",
-    "main.js": "/romanzollo/todo-react-app/static/js/main.dadf3b7c.js",
-    "index.html": "/romanzollo/todo-react-app/index.html",
-    "main.97097110.css.map": "/romanzollo/todo-react-app/static/css/main.97097110.css.map",
-    "main.dadf3b7c.js.map": "/romanzollo/todo-react-app/static/js/main.dadf3b7c.js.map"
+    "main.css": "/romanzollo/static/css/main.97097110.css",
+    "main.js": "/romanzollo/static/js/main.dadf3b7c.js",
+    "index.html": "/romanzollo/index.html",
+    "main.97097110.css.map": "/romanzollo/static/css/main.97097110.css.map",
+    "main.dadf3b7c.js.map": "/romanzollo/static/js/main.dadf3b7c.js.map"
   },
   "entrypoints": [
     "static/css/main.97097110.css",
