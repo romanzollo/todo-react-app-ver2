@@ -1,4 +1,4 @@
-# Todo React App version 1 (dev)
+# Todo React App version 2
 
 ## Available Scripts
 
